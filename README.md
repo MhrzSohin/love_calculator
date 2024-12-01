@@ -1,1 +1,1 @@
-# love_calculator
+# love_calculator : Calculate Your Love
