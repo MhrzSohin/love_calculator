@@ -8,13 +8,13 @@ class ResultController extends GetxController {
   final count = 0.obs;
   var args = Get.arguments ?? ['First Name', 'Last Name'];
   //random number generator
-  var random = 0;
+  var random = 0.obs;
 
   @override
   void onInit() {
     super.onInit();
     final randomGen = Random();
-    random = randomGen.nextInt(20) + 80;
+    random.value = randomGen.nextInt(20) + 80;
   }
 
   void increment() => count.value++;

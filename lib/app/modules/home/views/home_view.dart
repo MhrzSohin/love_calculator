@@ -10,6 +10,7 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 206, 97, 97),
         title: const Text(
@@ -21,7 +22,7 @@ class HomeView extends GetView<HomeController> {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-              image: AssetImage("assets/love.jpg"), fit: BoxFit.fill),
+              image: AssetImage("assets/walllove1.jpg"), fit: BoxFit.fill),
         ),
         padding: const EdgeInsets.all(10),
         child: Column(
